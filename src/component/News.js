@@ -1,8 +1,17 @@
-import { Component } from 'react'
+import React , { Component } from 'react'
 import NewsItem from './NewsItem'
 
 
 export class News extends Component {
+  articles = "articles"
+  constructor() {
+    super();
+    this.state = {
+      articles: this.articles ,
+      loading: false
+    }
+       
+  }
   render() {
     return (
       <div className = "container my-3">
